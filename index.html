@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <style>
+        *{
+            padding: 0; margin: 0; box-sizing:border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url("D:\rue.png");
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color:bisque;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color:blanchedalmond;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{ /*to create hover effect*/
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.3s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color:blanchedalmond;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: cornflowerblue;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color:cornsilk;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 3em;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background:cornflowerblue;
+            color:blanchedalmond;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.3s;
+        }
+        .h-txt a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo">
+                Mental Health
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Call</a>
+                <a href="#">Chat</a>
+                <a href="#">Nearby help centres</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <span>Talk</span>
+            <h1>We are here for you</h1>
+            <br>
+            <a href="#">Consult with doctor</a>
+        </section>
+    </header>
+</body>
+</html>
